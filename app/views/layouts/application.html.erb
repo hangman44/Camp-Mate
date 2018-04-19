@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Campmate</title>
+    <title>CAMPMATE</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,14 @@
   </head>
 
   <body>
+  
+   <%= render 'layouts/navigation' %>
+   <div class="container">
+   <%= render 'layouts/messages' %>
+   
+   
     <%= yield %>
+    </div>
+    <%= render 'layouts/footer' %>
   </body>
 </html>
