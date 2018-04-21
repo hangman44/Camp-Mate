@@ -1,0 +1,13 @@
+<h2 align="center">Title: <%= @event.title %></h2>
+  <div class="well col-xs-8 col-xs-offset-2">
+    <h4 class="center description"><strong>Description:</strong></h4>
+      <hr>
+        <%= simple_format(@event.description) %>
+          <div class="article-actions">
+            <%= link_to "Edit this article", edit_event_path(@event), class: "btn btn-xs btn-primary" %>
+            <%= link_to "Delete this article", event_path(@event), method: :delete,
+            data: { confirm: "Are you sure you want to delete the article?"},
+              class: "btn btn-xs btn-danger" %>
+              <%= link_to "View all articles", events_path, class: "btn btn-xs btn-success" %>
+          </div>
+  </div>
