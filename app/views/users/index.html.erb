@@ -1,7 +1,7 @@
 <h1 align="center">All CampMaters</h1>
 
 <div align="center">
-
+<%= will_paginate %>
 <% @users.each do |user| %>
 
 <ul class="listing">
@@ -18,7 +18,7 @@
 
 </li>
 
-<li><small><%= pluralize(user.events.count, "article") if user.events %></small></li>
+<li><small><%= pluralize(user.events.count, "event") if user.events %></small></li>
 
 </div>
 
@@ -27,6 +27,6 @@
 </ul>
 
 <% end %>
-
+<%= will_paginate %>
 </div>
 <%= link_to 'New User', new_user_path %>
