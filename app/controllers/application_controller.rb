@@ -22,7 +22,7 @@ class ApplicationController < ActionController::Base
 
       flash[:danger] = "You must be logged in to perform that action"
 
-      redirect_to root_path
+      redirect_to login_path
 
     end
 
