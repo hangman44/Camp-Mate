@@ -1,6 +1,6 @@
 class EventsController < ApplicationController
   before_action :set_event, only: [:edit, :update, :show, :destroy]
-  before_action :require_user, except: [:index, :show]
+  before_action :require_user, except: [:index]
   before_action :require_same_user, only: [:edit, :update, :destroy]
   
    def index
@@ -35,6 +35,7 @@ class EventsController < ApplicationController
   end
   
   def show
+    flash[:success]="you successfully joined this event"
   end
   
   def destroy
