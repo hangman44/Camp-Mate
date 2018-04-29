@@ -3,6 +3,7 @@ class EventsController < ApplicationController
   before_action :require_user, except: [:index]
   before_action :require_same_user, only: [:edit, :update, :destroy]
   
+  
    def index
     @events = Event.paginate(page: params[:page], per_page: 5)
    end
@@ -35,7 +36,6 @@ class EventsController < ApplicationController
   end
   
   def show
-    flash[:success]="you successfully joined this event"
   end
   
   def destroy

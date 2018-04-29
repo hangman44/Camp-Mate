@@ -23,11 +23,6 @@
         data: { confirm: "Are you sure you want to delete the event?"},
         class: "btn btn-xs btn-danger" %>
        </div>
-        <% else %>
-        <div class = "article-actions">
-                <%= link_to "join this event" , event_path(event), class: "btn btn-xs btn-primary", 
-                 data: { confirm: "Are you sure you want to join the event?"}%>
-        </div>
       <% end %>
     </div>
   </div>
