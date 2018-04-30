@@ -2,7 +2,6 @@ $navbar-default-bg: black;
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
-
 #logo {
   float: left;
   font-size: 1.7em;
@@ -35,8 +34,9 @@ $navbar-default-bg: black;
   background-color: green;
 }
 footer {
-  margin-top: 390px;
-  padding-top: 5px;
+  position:fixed;bottom:0;
+  width:100%;
+  display:block;
   border-top: 1px solid #eaeaea;
   color: #777;
 

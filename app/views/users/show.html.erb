@@ -11,5 +11,8 @@
 </div>
 <%= render 'events/event', obj: @user_events %>
 <div class="center">
+  <% if logged_in? && current_user.admin? %>
+  <%= link_to "Return to user's listing", users_path, class: "btn btn-xs btn-success" %>
+  <% end %>
   <%= will_paginate @user_events %>
 </div>

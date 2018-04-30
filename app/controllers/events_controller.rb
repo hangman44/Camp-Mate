@@ -49,7 +49,7 @@ class EventsController < ApplicationController
     @event = Event.find(params[:id])
   end
     def event_params
-    params.require(:event).permit(:title, :description, :location, :price)
+    params.require(:event).permit(:title, :description, :location, :price, :date)
     end
     
     def require_same_user

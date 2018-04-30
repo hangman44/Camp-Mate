@@ -20,6 +20,8 @@
 <h4><strong>Description:</strong> <%= simple_format(@event.description) %></h4>
 <h4><strong>Location:</strong> <%= simple_format(@event.location) %></h4>  
 <h4><strong>Entry Price:</strong> <%= simple_format(@event.price) %></h4>
+<h4><strong>Date:</strong> <%= simple_format(@event.date) %></h4>
+<h4><strong>Contact Information:</strong> <%= simple_format(@event.user.email) %></h4>
   <div class="article-actions">
    <% if logged_in? && (current_user == @event.user || current_user.admin?) %>
     <%= link_to "Edit this event", edit_event_path(@event), class: "btn btn-xs btn-primary" %>
