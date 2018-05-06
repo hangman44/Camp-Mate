@@ -21,6 +21,38 @@ $navbar-default-bg: black;
   height:350px;
 }
 
+div.carousel-inner {
+  height:450px;
+  background-position:center;
+  background-size:cover;
+}
+
+.carousel-inner{
+  
+}
+
+.carousel {
+    height:450px;    
+    margin:20px;
+}
+.camping {
+  font-size:18px;
+  width:60%;
+  background-color:rgb(234, 56, 68);
+  color:white;
+  text-align:center;
+  margin:20px auto;
+  padding:20px;
+}
+.places {
+  font-size:14px;
+  width:60%;
+  background-color:rgb(1, 160, 12);
+  color:white;
+  text-align:center;
+  margin-left:10px auto;
+  padding:20px;
+}
 .jumbotron h1 {
   color: #fff;
   text-align:center;
@@ -33,12 +65,16 @@ $navbar-default-bg: black;
   font-size:1.7em;
   background-color: green;
 }
+
 footer {
-  position:fixed;bottom:0;
+  position:fixed;
+  bottom:0;
+  left:0;
   width:100%;
   display:block;
+  text-align:center;
   border-top: 1px solid #eaeaea;
-  color: #777;
+  color: blue;
 
 }
 
