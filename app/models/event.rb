@@ -5,6 +5,6 @@ class Event < ApplicationRecord
   validates :user_id, presence: true
   validates :location, presence: true, length: {minimum: 10, maximum: 300}
   validates :price, presence: true
-  validates :date, presence: true, numericality: { only_integer: true }, length: {minimum: 10, maximum: 10}, acceptance: { message: 'Invalid Format!' }
+  validates :date, presence: true, length: {minimum: 10, maximum: 10}
   
 end
